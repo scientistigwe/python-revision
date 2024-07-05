@@ -6,7 +6,8 @@
 # Scenario and Tasks
 # 1. Assignment Management
 
-# Scenario: Students often have multiple assignments with various due dates. They need a system to keep track of these assignments efficiently.
+# Scenario: Students often have multiple assignments with various due dates.
+# They need a system to keep track of these assignments efficiently.
 # Task: Develop a function that allows students to add assignments with a description, due date, and subject.
 # 2. Study Hours Tracking
 
@@ -20,3 +21,72 @@
 
 # Scenario: Reflecting on study habits and strategies can help students improve their learning techniques and manage stress.
 # Task: Design a function that allows students to add journal entries by specifying the date and content.
+
+# 1. Assignement Manager Function
+def assignement_manager():
+    """
+    Description:
+
+    Args: None
+
+    Return: 
+    """
+    # Define Data Structure - dictionary
+    assignments = {}
+
+    # Loop to prompt user to enter assignement description, subject and due date 
+    while True:
+        subject = input("Enter the subject or 'Done' to exit: ").strip()
+        if subject.lower() == 'done':
+            break
+        try:
+            description = input(f"Enter {subject} description: ")
+            due_date = input(f"Enter {subject} due date: ")
+            assignments[subject] = [description, due_date]
+            print(f"Assignments: {assignments}")
+        except ValueError as e:
+            print(f"Error: {e}")
+
+    return assignments
+
+
+assignement_manager()
+    #{'subject:' ['description', 'due date']}
+  
+        # prompt student to add assignments subject string
+        # prompt student to add assignments description string
+        # prompt student to add assignments due date date
+    
+
+# 2. Study Hours Tracker Function
+def study_hours_tracker():
+    """
+    Description:
+
+    Args: 
+
+    Return:
+    """
+
+# 3. Grade Recorder Function
+def grade_recorder():
+    """
+    Description:
+
+    Args: 
+
+    Return:
+    """
+
+# 1. Study Jorunal Keeper Function
+def study_journal_keeper():
+    """
+    Description:
+
+    Args: 
+
+    Return:
+    """
+
+def main():
+    assignement_manager()
