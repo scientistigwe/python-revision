@@ -20,3 +20,67 @@
 
 # Scenario: Reflecting on study habits and strategies can help students improve their learning techniques and manage stress.
 # Task: Design a function that allows students to add journal entries by specifying the date and content.
+
+# SOLUTION: STEPS:
+
+# Step 1: Academic Organiser Function
+
+def assignment_manager():
+    """
+    description:
+
+    Args:
+
+    Return:
+    """
+
+#   Define Data Structure - Dictionary
+    assignments = {}
+
+#   Loop to prompt user to enter assignment description, subject and due date
+    while True:
+        subject = input ("Enter the subject or 'Done' to exit: ")
+        if subject subject.lower() == 'done'
+            break
+        try:
+            description
+
+
+#    PSEUDOCODE:
+#     prompt students to add due dates date
+#     prompt students to add subject str
+#     prompt students to add descriptionn str
+
+
+
+
+# Step 2: Study Hours Tracker Function
+def study_hours_tracker():
+    """
+    description:
+
+    Args:
+
+    Return:
+    """
+
+# Step 3: Grading Recording
+def grade_recorder():
+    """
+    description:
+
+    Args:
+
+    Return:
+    """
+
+
+# Step 4: Study Journal Keeping
+def grade_recorder():
+    """
+    description:
+
+    Args:
+
+    Return:
+    """
